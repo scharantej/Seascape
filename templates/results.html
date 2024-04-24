@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ocean View Points Finder</title>
+</head>
+<body>
+<h1>Ocean View Points</h1>
+<ul>
+{% for point in points %}
+<li>{{ point.name }} (Altitude: {{ point.altitude }} ft, View: {{ point.view }})</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
